@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
 
 const MainBody = React.forwardRef(
@@ -20,11 +19,9 @@ const MainBody = React.forwardRef(
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
-          <Typist>
             <div className="lead typist">
               {message}
             </div>
-          </Typist>
           <div className="p-5">
             {icons.map((icon, index) => (
               <a
@@ -40,7 +37,7 @@ const MainBody = React.forwardRef(
           </div>
           <a
             className="btn btn-outline-light btn-lg "
-            href="#projects"
+            href="#works"
             role="button"
             aria-label="Learn more about my projects"
           >

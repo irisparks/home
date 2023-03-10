@@ -1,92 +1,86 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import Pagination from 'react-bootstrap/Pagination';
-
 const worksData = [
   {
     id: 1,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'Lonely Path',
-    subtitle: 'Web Design'
+    link: 'https://github.com/irisparks/react-photogallery',
+    image: require('../../assets/img/gallery-image.png'),
+    title: 'Photo Gallery',
+    subtitle: 'React.js, Axios and MaterialUL'
   },
   {
     id: 2,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'Photographer Girl',
-    subtitle: 'Branding'
+    link: 'https://github.com/irisparks/redux-feed-back-loop',
+    image: require('../../assets/img/Feedback_Project.png'),
+    title: 'Redux-Feedback-Loop',
+    subtitle: 'React.js, React-Redux, Express.js/Node.js, postgreSQL'
+  
   },
   {
     id: 3,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'The Difference',
-    subtitle: 'Web Design'
+    link: 'https://github.com/irisparks/cirrusmd-assessment',
+    image: require('../../assets/img/gif_generator.png'),
+    title: 'Gif Generator',
+    subtitle: 'React.js, API'
   },
   {
     id: 4,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'Nature Patterns',
-    subtitle: 'Branding'
+    link: 'https://github.com/irisparks/solo-gachibuy',
+    image: require('../../assets/img/gachi-buy_interface.png'),
+    title: 'Gachi-Buy',
+    subtitle: 'React.js, Node.js/Express.js, postgreSQL, CSS & MaterialUL'
+  
   },
   {
     id: 5,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'The Difference',
-    subtitle: 'Photography'
+    link: 'https://github.com/irisparks/rubyonrails-blog',
+    image: require('../../assets/img/RoRBlog.png'),
+    title: 'Ruby on Rails Blog',
+    subtitle: 'Ruby on Rails, Bulma'
+
   },
   {
     id: 6,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'Winter Sonata',
-    subtitle: 'Web Design'
+    link: 'https://github.com/irisparks/rails-scheduler',
+    image: require('../../assets/img/rails_scheduler.png'),
+    title: 'Rails Scheduler',
+    subtitle: 'Ruby on Rails, Ruby, Bluma and SCSS'
   },
   {
     id: 7,
-    link: 'https://www.google.com',
+    link: '',
     image: require('../../assets/img/bobby-dino.png'),
-    title: 'Lonely Path',
-    subtitle: 'Branding'
+    title: 'Bobby Dino',
+    subtitle: 'Sticker Project drawn on iPad with Procreate.'
   },
   {
     id: 8,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'Appreciation',
-    subtitle: 'Photography'
+    link: '',
+    image: require('../../assets/img/green-dino.png'),
+    title: 'Green Dino',
+    subtitle: 'Sticker Project drawn on iPad with Procreate.'
   },
   {
     id: 9,
-    link: 'https://www.google.com',
-    image: require('../../assets/img/bobby-dino.png'),
-    title: 'Happy Days',
-    subtitle: 'Web Design'
+    link: '',
+    image: require('../../assets/img/blue-dino.png'),
+    title: 'Blue Dino',
+    subtitle: 'Sticker Project drawn on iPad with Procreate.'
   }
 ]
 
-let active = 2;
-let items = [];
-for (let number = 1; number <= 5; number++) {
-  items.push(
-    <Pagination.Item key={number} active={number === active}>
-      {number}
-    </Pagination.Item>,
-  );
-}
+
 
 function AppWorks() {
   return (
     <section id="works" className="block works-block">
       <Container fluid>
         <div className="title-holder">
-          <h2>Our works</h2>
-          <div className="subtitle">our awesome works</div>
+          <h2>Projects</h2>
+          <div className="subtitle">personal work</div>
         </div>
         <Row className='portfoliolist'>
           {
@@ -107,7 +101,6 @@ function AppWorks() {
             })
           }
         </Row>
-        <Pagination>{items}</Pagination>
       </Container>  
     </section>
   );

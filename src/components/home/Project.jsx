@@ -5,24 +5,18 @@ import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
 
-const dummyProject = {
-  name: null,
-  description: null,
-  svn_url: null,
-  stargazers_count: null,
-  languages_url: null,
-  pushed_at: null,
-};
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
-// const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
 const Project = ({ heading, username, length, specfic }) => {
+
+
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
-  const dummyProjectsArr = new Array(length + specfic.length).fill(
-    dummyProject
-  );
+  const testAPI = `https://gh-pinned-repos.egoist.dev/?username=irisparks`
+  // const dummyProjectsArr = new Array(length + specfic.length).fill(
+  //   dummyProject
+  // );
 
   const [projectsArray, setProjectsArray] = useState([]);
 
@@ -31,6 +25,8 @@ const Project = ({ heading, username, length, specfic }) => {
     try {
       // getting all repos
       const response = await axios.get(allReposAPI);
+      console.log("res", response)
+      console.log("testAPI", testAPI)
       // slicing to the length
       repoList = [...response.data.slice(0, length)];
       // adding specified repos
@@ -59,21 +55,13 @@ const Project = ({ heading, username, length, specfic }) => {
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <Row>
-          {projectsArray.length
-            ? projectsArray.map((project, index) => (
-              <ProjectCard
-                key={`project-card-${index}`}
-                id={`project-card-${index}`}
-                value={project}
-              />
-            ))
-            : dummyProjectsArr.map((project, index) => (
-              <ProjectCard
-                key={`dummy-${index}`}
-                id={`dummy-${index}`}
-                value={project}
-              />
-            ))}
+          {projectsArray.map((project, index) => (
+            <ProjectCard
+              key={`project-card-${index}`}
+              id={`project-card-${index}`}
+              value={project}
+            />
+          ))}
         </Row>
       </Container>
     </Jumbotron>

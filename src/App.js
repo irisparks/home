@@ -8,7 +8,7 @@ import {
   skills,
   experiences,
 } from "./editable-stuff/config.js";
-import './App.css';
+// import './App.css';
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
@@ -38,7 +38,7 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {/* <AppWorks /> */}
+      <AppWorks />
       {/* <ProjectDisplay /> */}
       {repos.show && (
         <Project
