@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b158610d.css",
+    "main.js": "/static/js/main.e0015fa6.js",
+    "static/js/787.4b24f717.chunk.js": "/static/js/787.4b24f717.chunk.js",
+    "static/media/Feedback_Project.png": "/static/media/Feedback_Project.aea71e96c6913ccd0f34.png",
+    "static/media/gallery-image.png": "/static/media/gallery-image.53e7427f717553a68e4c.png",
+    "static/media/iris-parks.jpg": "/static/media/iris-parks.4442e73464df16174ad1.jpg",
+    "static/media/resume.png": "/static/media/resume.33db4089e85f450c0e72.png",
+    "static/media/gif_generator.png": "/static/media/gif_generator.2a16d62c89d5a8d8c43d.png",
+    "static/media/bobby-dino.png": "/static/media/bobby-dino.c6f9fc635ba8328d8e27.png",
+    "static/media/blue-dino.png": "/static/media/blue-dino.6c6362514d442215e744.png",
+    "static/media/green-dino.png": "/static/media/green-dino.10ee9d5fca933ac5590d.png",
+    "static/media/gachi-buy_interface.png": "/static/media/gachi-buy_interface.34c6ed49f8af145f6565.png",
+    "static/media/bottom-keyboard-clone.png": "/static/media/bottom-keyboard-clone.a0d24f20cc268690224d.png",
+    "static/media/rails_scheduler.png": "/static/media/rails_scheduler.3d7fa3f88b39b6e7fe8a.png",
+    "static/media/RoRBlog.png": "/static/media/RoRBlog.fe9100f5077c02a1d82d.png",
+    "index.html": "/index.html",
+    "main.b158610d.css.map": "/static/css/main.b158610d.css.map",
+    "main.e0015fa6.js.map": "/static/js/main.e0015fa6.js.map",
+    "787.4b24f717.chunk.js.map": "/static/js/787.4b24f717.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b158610d.css",
+    "static/js/main.e0015fa6.js"
+  ]
+}
